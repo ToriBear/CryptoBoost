@@ -133,7 +133,7 @@ ul {
 
 .main__section-body {
     position: relative;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 200px;
 
 }
@@ -165,41 +165,41 @@ ul {
     margin-top: 3rem
 }
 
-.main__why-crypto {
-    display: flex;
-    justify-content: center;
-}
-
-.main__why-crypto h2 {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
 .importantText {
     color: #D2DFE2;
     font-size: 2.8rem;
     font-weight: bold;
-
-    margin-top: 25%;
-    padding-bottom: 5%;
 }
 
-.card-holder {
+.importantText__why-crypto {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.background__why-crypto {
+    background-color: #14283D;
+    margin-top: 190px;
+    padding: 60px;
+}
+
+.feature-card__holder {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.card {
+.feature-card {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
     margin: 50px 50px;
-
+    
     aspect-ratio: 350/419;
     overflow: hidden;
-
+    
     background: #0D1A28;
     border: 1px solid #127AF5;
     border-radius: 50px;
@@ -207,26 +207,26 @@ ul {
     color: #D2DFE2;
 }
 
-.card img {
+.feature-card img {
     width: 100%;
     height: 20%;
     object-fit: contain;
     padding-top: 30px;
-
+    
 }
 
-.card-content {
+.feature-card__content {
     padding: 15px;
 }
 
-.card-header {
+.feature-card__header {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.card-body {
+.feature-card__body {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
@@ -236,51 +236,79 @@ ul {
     -webkit-box-orient: vertical;
     padding-top: 30px;
     text-align: center;
-
+    
 }
 
-.card-holder {
+.importantText__reviews {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 2%;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.reviews__container {
+    position: relative;
+}
+
+.review-card__holder {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.main__reviews {
-    display: flex;
-    justify-content: center;
+.review-card__outer-container {
+    position: relative;
+    margin: 30px 30px;
 }
 
-.main__reviews h2 {
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.review-card {
+.review-card__container {
     background: #0D1A28;
     border: 1px solid #127AF5;
-    border-radius: 35px;
+    border-radius: 30px;
     max-height: 20ch;
     color: #D2DFE2;
 }
 
-.image-quotes-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.image__quotes-1 {
     position: absolute;
+    top: -28px;
+    left: 30px;
+    width: 12%;
+    height: auto;
+}
+
+.image__quotes-2 {
+    position: absolute;
+    bottom: -28px;
+    right: 30px;
+    width: 12%;
+    height: auto;
+    transform: rotateZ(180deg)
+}
+
+.image__person-1 {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 24%;
+    height: auto;
 }
 
 .review-card__content {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    margin: 20px 10px;
-    width: 50ch;
+    margin: 10px 10px;
+    width: 40ch;
 
     aspect-ratio: 300/800px;
     overflow: hidden;
 
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .review-card__header {
@@ -299,14 +327,9 @@ ul {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     padding-top: 20px;
+    padding-bottom: 20px;
     text-align: left;
 
-}
-
-.review-card__holder {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .footer__outer-container {
